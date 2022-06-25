@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My World</title>
+    <link rel="stylesheet" href="css/page-3.css">
+</head>
+<body>
+    <!-- 页眉区 header -->
+    <header>
+        <!-- 必须得在<p></p>前方 -->
+        <img id="logo2"
+            src="images/logo-2.png" alt="THE GREAT JUJU EMPIRE">
+        <p>欢迎来到JUJUの世界</p>
+    </header>
+    <!-- 导航区 -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+			      <li><a href="page-1.html">校园美食记</a></li>
+	      		<li><a href="page-2.html">随笔小记</a></li>
+		      	<li><a href="page-3.html">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- 通过div分成了左右两栏 -->
+<div>
+    <div id="fr">
+    <!-- 表单通常采用表格来布局 -->
+    <form>
+        <div class="tableRow">
+            <p> 姓名: </p>
+            <p> <input type="text" name="name" placeholder="请填写"> </p>
+        </div>
+        <div class="tableRow">
+            <p> 性别: </p>
+            <p>
+                <input type="radio" name="gender"> 男
+                <input type="radio" name="gender"> 女
+            </p>
+        </div>
+        <div class="tableRow">
+            <p> 年龄: </p>
+            <p> <input type="number" name="age" min="1" max="100"> </p>
+        </div>
+        <div class="tableRow">
+            <p> 联系方式: </p>
+            <p>
+                <select name="ways">
+                    <option value="">--请选择--</option>
+                  <option value="">移动电话</option>
+                  <option value="">座机电话number</option>
+                  <option value="">电子邮箱</option>
+                </select>
+             <input type="text" name="ways" placeholder="请填写相应的联系方式"> </p>
+        </div>
+        <div class="tableRow">
+            <p> 你的爱好: </p>
+            <!-- 如果不使用表格，选项排列参差不齐，通过表格可以辅助布局 -->
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="hobby"> 阅读  </td>
+                        <td><input type="checkbox" name="hobby"> 绘画</td>
+                        <td><input type="checkbox" name="hobby"> 运动</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="hobby"> 听音乐</td>
+                        <td><input type="checkbox" name="hobby"> 享受美食</td>
+                        <td><input type="checkbox" name="hobby"> 旅游</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="checkbox" name="hobby"> 其他
+                            <input type="text" name="extra" placeholder="请填写你的爱好">
+                        </td>
+                    </tr>
+                </table>     
+        </div>   
+        <div class="tableRow">
+            <p> 留言区: </p>
+            <p>
+                <textarea name="comments"></textarea>
+            </p>
+        </div>
+        <div class="tableRow">
+            <p></p>
+            <p> <input type="submit" value="提交"> </p>
+        </div>
+    </form>
+    </div>
+    <div id="con">
+        <div id="connect">
+            <img src="Images/connect.png" alt="connecting us">
+            <p>THE GREAT JUJU EMPIRE</p>
+            <p>联系电话：25911314</p>
+            <p>电子邮箱：tgjje@email</p>
+        </div>
+    </div>
+</div>
+
+    <!-- 页脚区 footer -->
+    <footer>
+        &copy; 2022, THE GREAT JUJU EMPIRE </br>
+        个人网站 · Web前端开发课程作业 · BY JUJU
+    </footer>
+</body>
+</html>
